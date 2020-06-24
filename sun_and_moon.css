@@ -1,0 +1,72 @@
+@keyframes riseAndFall {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: calc(100% - 100px);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #c8a16f;
+    width: 600px;
+    height: 600px;
+    z-index: 5;
+    position: relative;
+}
+
+.horizon {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: lightskyblue;
+}
+
+.sun {
+    animation-name: riseAndFall;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(247,194,68,1) 87%);
+    border: 2px solid yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+
+/*.moon {*/
+/*    background: #8C9BA2;*/
+/*    margin:30px 30px 30px 30px;*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    border-radius: 50%;*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*}*/
+
