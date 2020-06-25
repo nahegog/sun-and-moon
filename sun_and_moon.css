@@ -12,15 +12,6 @@
         /*border: 2px solid #8995a2;*/
     }
 }
-/*@keyframes dayToNight {*/
-/*    0% {*/
-/*        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(68,166,247,1) 87%);*/
-/*    }*/
-
-/*    100% {*/
-/*        background: linear-gradient(0deg, rgba(25,86,154,1) 0%, rgba(11,31,54,1) 87%);*/
-/*    }*/
-/*}*/
 
 * {
     margin: 0;
@@ -48,46 +39,34 @@ body {
 }
 
 .cloud  {
-    margin-top: 12px;
-    height: 75px;
-    width: 300px;
+    top: 20px;
+    height: 45px;
+    width: 45px;
+    /*border: 5px solid grey;*/
     border-radius: 50%;
-    background: #234;
-    opacity: 1;
+    background: white;
     position: absolute;
-    left: 600px;
-    display: inline-block;
-    box-shadow: -500px 0 20px 40px #fff;
     z-index: 1;
 }
 
-.cloud:nth-child(1) {
-    top: 75px;
-}
-
 .cloud:nth-child(2) {
-    top: 65px;
-    left: 700px;
-    width: 280px    ;
-    height: 100px;
+    left: 255px;
+    top: 20px;
 }
-
 .cloud:nth-child(3) {
-    top: 65px;
-    left: 700px;
-    height: 100px;
-    width: 50px;
-}
+    top: 10px;
+    left: 270px;
+    width: 55px;
+    height: 55px;
 
-.cloud:nth-child(4), .cloud:nth-child(5) {
-    top: 60px;/
-    /*left: 850px;*/
-    height: 130px;
-    width: 60px;
 }
-
-.cloud:nth-child(5) {
-    left: 860px;
+.cloud:nth-child(4) {
+    top: 63px;
+    left: 276px;
+    width: 45px;
+    height: 2px;
+    border-radius: 0;
+    background: white;
 }
 
 .sun  {
