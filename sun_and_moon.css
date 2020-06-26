@@ -24,6 +24,31 @@
     }
 }
 
+@keyframes backgroundOverlay {
+    0% {
+
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+
+    }
+}
+@keyframes horizonOverlay {
+    0% {
+
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +65,7 @@ body {
 /* TODO: maybe make background pink
     black overlay over everything but the sea and the sun animate its opacity */
 .container {
+
     display: flex;
     filter:grayscale(50%);
     flex-direction: column;
@@ -49,6 +75,23 @@ body {
     width: 600px;
     height: 600px;
     position: relative;
+}
+.overlay-container {
+    animation-name: backgroundOverlay;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+
+    margin-top: -5px;
+    align-items: center;
+    background: black;
+    opacity: 0;
+    border: 5px solid #fff;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    z-index: 2;
 }
 
 .cloud-container {
@@ -108,12 +151,6 @@ body {
     top: 70px;
 }
 
-/*.cloud:nth-child(5) {*/
-/*    height: 30px;*/
-/*    width: 30px;*/
-/*    left: -10px;*/
-/*    top: 25px;*/
-/*}*/
 .sun  {
     animation-name: riseAndFall;
     animation-duration: 5s;
@@ -132,14 +169,21 @@ body {
     position: relative;
     display: inline-block;
     box-shadow: 0 0 2px 1px #f0b235;
+    z-index: 2;
 }
 
 .horizon {
+    animation-name: horizonOverlay;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
     height: 130px;
     width: 100%;
     position: absolute;
     bottom: 0;
     background: radial-gradient(circle, rgba(74,138,210,1) 3%, rgba(25,86,154,1) 87%);
+    z-index: 3;
 }
 
 
