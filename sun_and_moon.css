@@ -62,7 +62,6 @@ body {
     background: white;
     position: absolute;
     z-index: 1;
-    border: 2px solid pink;
     left: -20px;
     top: 30px;
 }
@@ -72,24 +71,21 @@ body {
     top: 0;
     width: 55px;
     height: 55px;
-    border: 2px solid yellow;
     top: 20px;
 
 }
 .cloud:nth-child(3) {
     top: 30px;
     left: 20px;
-    border: 2px solid darkkhaki;
     left: 30px;
 }
 .cloud:nth-child(4) {
     top: 72px;
     left: 3px;
     width: 45px;
-    height: 2px;
+    height: 3px;
     border-radius: 0;
     background: white;
-    border: 2px solid salmon;
 
 }
 
