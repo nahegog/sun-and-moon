@@ -42,7 +42,7 @@
     }
 
     50% {
-        opacity: 0.6;
+        opacity: 0.5;
     }
     100% {
 
@@ -173,11 +173,6 @@ body {
 }
 
 .horizon {
-    animation-name: horizonOverlay;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 0.4s;
-    animation-iteration-count: infinite;
     height: 130px;
     width: 100%;
     position: absolute;
@@ -186,5 +181,58 @@ body {
     z-index: 3;
 }
 
+.horizon-container {
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 
+.horizon-overlay {
+    animation-name: horizonOverlay;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    background: #222b32;
+    opacity: 0;
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+}
+
+.boat-container {
+    right: 140px;
+    bottom: 158px;
+    position: absolute;
+    z-index:2;
+}
+.boat-bottom {
+    position: absolute;
+    border-top: 40px solid red;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 105px;
+}
+.boat-left {
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-left: 50px solid transparent;
+}
+
+.boat-right {
+    position: absolute;
+    bottom: 5px;
+    left: 55px;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-right: 50px solid transparent;
+}
 
