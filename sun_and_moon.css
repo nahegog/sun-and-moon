@@ -4,6 +4,9 @@
         height: 100px;
         width: 100px;
     }
+    2% {
+        top: 11%;
+    }
     25% {
         height: 80px;
         width: 80px;
@@ -51,7 +54,7 @@ body {
 .cloud-container {
     position: relative;
     left: -250px;
-    top: 30px;
+    top: 40px;
 }
 
 .cloud  {
@@ -59,7 +62,7 @@ body {
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    background: white;
+    background: #f6f6f9;
     position: absolute;
     z-index: 1;
     left: -20px;
@@ -85,10 +88,32 @@ body {
     width: 45px;
     height: 3px;
     border-radius: 0;
-    background: white;
-
 }
 
+.cloud-container:nth-child(2) {
+    position: relative;
+    left: -145px;
+    top: 100px;
+}
+
+.cloud-container:nth-child(3) {
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+.cloud-container:nth-child(4) {
+    position: relative;
+    left: 180px;
+    top: 70px;
+}
+
+/*.cloud:nth-child(5) {*/
+/*    height: 30px;*/
+/*    width: 30px;*/
+/*    left: -10px;*/
+/*    top: 25px;*/
+/*}*/
 .sun  {
     animation-name: riseAndFall;
     animation-duration: 5s;
